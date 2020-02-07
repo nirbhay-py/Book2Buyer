@@ -2,7 +2,7 @@
 iOS Repo for Book2Buyer 👅
 
 Progress so far: 
-1) Added sell book functionality.
+1) Added sell book functionality. (7/2/20)
 
 
 

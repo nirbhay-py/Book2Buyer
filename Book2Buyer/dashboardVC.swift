@@ -22,7 +22,7 @@ class dashboardVC: UIViewController {
     }
     func setUpUser(){
         profileImg.load(url: URL(string: globalUser.photoURL)!)
-        nameLbl.text = "Hi, " + globalUser.givenName + "👋🏻"
+//        nameLbl.text = "Hi, " + globalUser.givenName + "👋🏻"
         profileImg.makeRounded()
     }
 }

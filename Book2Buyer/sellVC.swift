@@ -14,14 +14,21 @@ class sellVC: UIViewController,TagListViewDelegate{
     @IBOutlet weak var detailsTv: UITextView!
     @IBOutlet weak var nameTf: UITextField!
     
+    @IBOutlet weak var subView: UIView!
+    @IBOutlet weak var ProceedBtn: UIButton!
     var tags:[String]=[]
     override func viewDidLoad() {
         super.viewDidLoad()
         bookTags.delegate = self
         setUpTagList()
-        detailsTv.layer.borderWidth = 1
-        detailsTv.layer.borderColor = UIColor.systemGreen.cgColor
-        detailsTv.layer.cornerRadius = 15
+        ProceedBtn.layer.cornerRadius = 10
+        ProceedBtn.clipsToBounds = true
+        subView.layer.cornerRadius = 10
+        subView.clipsToBounds = true
+        
+//        detailsTv.layer.borderWidth = 1
+//        detailsTv.layer.borderColor = UIColor.systemGreen.cgColor
+//        detailsTv.layer.cornerRadius = 15
         
     }
     override func viewDidAppear(_ animated: Bool) {

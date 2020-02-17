@@ -14,6 +14,8 @@ class Sell2VC: UIViewController,UIImagePickerControllerDelegate,UINavigationCont
     var bookName:String!
     var imgData:Data!
      var downloadUrl:URL!
+    @IBOutlet weak var SubmitBtn: UIButton!
+    @IBOutlet weak var CamImg: UIButton!
     @IBOutlet weak var priceTf: UITextField!
     @IBOutlet weak var phoneLbl: UILabel!
     @IBOutlet weak var detailsTf: UITextField!
@@ -25,6 +27,8 @@ class Sell2VC: UIViewController,UIImagePickerControllerDelegate,UINavigationCont
             self.phoneLbl.isHidden = true
             self.phoneTf.isHidden = true
         }
+        SubmitBtn.layer.cornerRadius = 10
+        SubmitBtn.clipsToBounds = true
     }
 
     @IBAction func camBtnTouched(_ sender: Any) {
